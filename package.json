@@ -1,0 +1,39 @@
+{
+  "name": "vcgrep",
+  "description": "File search with result collation and simple terminal visual display.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonesd/vcgrep",
+  "author": {
+    "name": "David Jones",
+    "email": "david@dgjones.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonesd/vcgrep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonesd/vcgrep/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonesd/vcgrep/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/vcgrep",
+  "engines": {
+    "node": "0.10"
+  },
+  "scripts": {},
+  "devDependencies": {},
+  "keywords": [],
+  "preferGlobal": "true",
+  "bin": {
+    "filesearch": "lib/vcgrep.js"
+  },
+  "dependencies": {
+    "linebyline": "0.0.7",
+    "pkginfo": "^0.3.0",
+    "yargs": "^2.1.1"
+  }
+}
