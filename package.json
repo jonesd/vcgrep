@@ -32,8 +32,10 @@
     "filesearch": "lib/vcgrep.js"
   },
   "dependencies": {
+    "ansi": "^0.3.0",
     "linebyline": "0.0.7",
     "pkginfo": "^0.3.0",
+    "underscore": "^1.7.0",
     "yargs": "^2.1.1"
   }
 }
