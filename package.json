@@ -22,14 +22,14 @@
   ],
   "main": "lib/vcgrep",
   "engines": {
-    "node": "0.10"
+    "node": ">=0.10"
   },
   "scripts": {},
   "devDependencies": {},
   "keywords": [],
   "preferGlobal": "true",
   "bin": {
-    "filesearch": "lib/vcgrep.js"
+    "vcgrep": "lib/vcgrep.js"
   },
   "dependencies": {
     "ansi": "^0.3.0",
