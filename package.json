@@ -1,6 +1,6 @@
 {
   "name": "vcgrep",
-  "description": "File search with result collation and simple terminal visual display.",
+  "description": "File content search tool based on regular expression capture groups with simple terminal visualization.",
   "version": "0.1.0",
   "homepage": "https://github.com/jonesd/vcgrep",
   "author": {
@@ -34,7 +34,9 @@
   "dependencies": {
     "ansi": "^0.3.0",
     "linebyline": "0.0.7",
+    "matchstick": "^0.7.5",
     "pkginfo": "^0.3.0",
+    "shelljs": "^0.3.0",
     "underscore": "^1.7.0",
     "yargs": "^2.1.1"
   }

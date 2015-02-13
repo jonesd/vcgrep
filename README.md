@@ -27,18 +27,22 @@ Frequency of words found in a text document:
 
     Usage: vcgrep [options] [pattern] [input files]
 
+Pattern:
+
 The `pattern` is a regular expression containing at least one capture group.
 
 For more details on the JavaScript regular expression syntax, see: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions?redirectlocale=en-US&redirectslug=JavaScript%2FGuide%2FRegular_Expressions)
 
 Options:
 
-    --version       Show version number
-    --verbose, -v   Verbose logging
-    --full, -f      Generate full output without any styling
-    --global, -g    Multiple matches per line are considered
-    --skip_results  Do not show full results
-    --top, -t       Results will include only the first top entries
+    --full, -f       Generate full output without any styling
+    --global, -g     Multiple matches per line are considered
+    --head, -h       Limit results to the most frequent n entries
+    --include        include only files that match the wildcard
+    --recursive, -r  Navigate subdirectories for input files
+    --skip_results   Do not show full results
+    --verbose, -v    Verbose logging
+    --version        Show version number
 
 ## Licence
 
@@ -48,6 +52,7 @@ vcgrep is released under the [MIT licence](https://github.com/jonesd/vcgrep/blob
 ## Author
 
 David Jones
-http://www.dgjones.info
 
-https://github.com/jonesd/vcgrep
+[http://www.dgjones.info](http://www.dgjones.info)
+
+[https://github.com/jonesd/vcgrep](https://github.com/jonesd/vcgrep)
