@@ -39,9 +39,8 @@ Options:
     --global, -g     Multiple matches per line are considered
     --head, -h       Limit results to the most frequent n entries
     --include        include only files that match the wildcard
-    --json           Output results in json format
+    --output, -o     Output format, one of: none,plain,json,histogram  [default: "histogram"]
     --recursive, -r  Navigate subdirectories for input files
-    --skip_results   Do not show full results
     --verbose, -v    Verbose logging
     --version        Show version number
 
