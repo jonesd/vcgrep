@@ -35,11 +35,11 @@ For more details on the JavaScript regular expression syntax, see: [MDN](https:/
 
 Options:
 
-    --full, -f       Generate full output without any styling
     --global, -g     Multiple matches per line are considered
     --head, -h       Limit results to the most frequent n entries
     --include        include only files that match the wildcard
     --output, -o     Output format, one of: none,plain,json,histogram  [default: "histogram"]
+    --progress, -p   Progress feedback, one of: none,line              [default: "line"]
     --recursive, -r  Navigate subdirectories for input files
     --verbose, -v    Verbose logging
     --version        Show version number
