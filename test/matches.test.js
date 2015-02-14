@@ -40,6 +40,11 @@ describe('Matches', function() {
       matches.increment('key1');
       matches.max.should.eql(2);
     });
+    it('should ignore reserved object fields... until can better handle it', function() {
+      matches.increment('toString');
+      matches.total.should.eql(0);
+    });
+    it('should support reserved object field names as keys');
   });
 
   describe('values', function() {
