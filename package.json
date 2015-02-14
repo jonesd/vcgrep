@@ -25,7 +25,10 @@
     "node": ">=0.10"
   },
   "scripts": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "should": "^5.0.0"
+  },
   "keywords": [],
   "preferGlobal": "true",
   "bin": {
@@ -39,5 +42,8 @@
     "shelljs": "^0.3.0",
     "underscore": "^1.7.0",
     "yargs": "^2.1.1"
+  },
+  "scripts": {
+    "test": "mocha -R spec ./test"
   }
 }
