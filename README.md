@@ -1,7 +1,8 @@
 # vcgrep
 
-File content search tool based on regular expression capture groups with simple terminal visualization. Use it to
-easily show the frequency of status codes from apache access logs, or the frequency of words in a text document.
+**vcgrep** prints a summary of all the matches of a regular-expression capture group within input files. Simple
+terminal visualization of the progress and results is provided. Use it to easily show the frequency of status codes
+from apache access logs, or the frequency of words in a text document.
 
 <img src="http://dgjones.info/vcgrep/text-search-small.gif"/>
 
@@ -24,9 +25,9 @@ Frequency of words found in a text document:
     vcgrep -g '(\w+)+' README.md
 
 
-## Usage
+## Syntax
 
-    Usage: vcgrep [options] [pattern] [input files]
+    Usage: vcgrep [OPTIONS] PATTERN FILES...
 
 ### Pattern
 
@@ -34,16 +35,25 @@ The `pattern` is a regular expression containing at least one capture group.
 
 For more details on the JavaScript regular expression syntax, see: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions?redirectlocale=en-US&redirectslug=JavaScript%2FGuide%2FRegular_Expressions)
 
-### Options
+### General Options
 
-    --global, -g     Multiple matches per line are considered
-    --head, -h       Limit results to the most frequent n entries
-    --include        include only files that match the wildcard
-    --output, -o     Output format, one of: none,plain,json,histogram  [default: "histogram"]
-    --progress, -p   Progress feedback, one of: none,line              [default: "line"]
-    --recursive, -r  Navigate subdirectories for input files
+    --help           Prints a summary of the usage
     --verbose, -v    Verbose logging
     --version        Show version number
+
+## File Selection Options
+
+    --include        include only files that match the wildcard
+
+## Pattern Matching Options
+
+    --global, -g     Multiple matches per line are considered
+
+## Output Options
+
+    --head, -h       Limit results to the most frequent n entries
+    --output, -o     Output format, one of: none,plain,json,histogram  [default: "histogram"]
+    --progress, -p   Progress feedback, one of: none,line              [default: "line"]
 
 
 ## API
