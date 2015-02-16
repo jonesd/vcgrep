@@ -1,7 +1,7 @@
 {
   "name": "vcgrep",
   "description": "File content search tool based on regular expression capture groups with simple terminal visualization.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonesd/vcgrep",
   "author": {
     "name": "David Jones",
@@ -24,7 +24,9 @@
   "engines": {
     "node": ">=0.10"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "mocha -R spec ./test"
+  },
   "devDependencies": {
     "mocha": "^2.1.0",
     "should": "^5.0.0"
@@ -45,8 +47,5 @@
     "shelljs": "^0.3.0",
     "underscore": "^1.7.0",
     "yargs": "^2.1.1"
-  },
-  "scripts": {
-    "test": "mocha -R spec ./test"
   }
 }
