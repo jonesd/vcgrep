@@ -75,6 +75,8 @@ vcgrep.searchFiles(/(\w+)+/g, ['README.md'], 'none', function(err, matches) {
 # Change Log
 
 ## [Unreleased][unreleased]
+
+## [0.2.0] - 2015-02-16
 ### Added
 - Introduce simple API entry point for direct use by NodeJS modules
 - Process exit code, 0 when matches found, 1 no matches
