@@ -20,7 +20,7 @@
       "url": "https://github.com/jonesd/vcgrep/blob/master/LICENSE"
     }
   ],
-  "main": "lib/vcgrep",
+  "main": "lib/api.js",
   "engines": {
     "node": ">=0.10"
   },
@@ -29,7 +29,10 @@
     "mocha": "^2.1.0",
     "should": "^5.0.0"
   },
-  "keywords": [],
+  "keywords": [
+    "grep",
+    "file"
+  ],
   "preferGlobal": "true",
   "bin": {
     "vcgrep": "lib/vcgrep.js"

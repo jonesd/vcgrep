@@ -28,13 +28,13 @@ Frequency of words found in a text document:
 
     Usage: vcgrep [options] [pattern] [input files]
 
-Pattern:
+### Pattern
 
 The `pattern` is a regular expression containing at least one capture group.
 
 For more details on the JavaScript regular expression syntax, see: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions?redirectlocale=en-US&redirectslug=JavaScript%2FGuide%2FRegular_Expressions)
 
-Options:
+### Options
 
     --global, -g     Multiple matches per line are considered
     --head, -h       Limit results to the most frequent n entries
@@ -46,10 +46,27 @@ Options:
     --version        Show version number
 
 
+## API
+
+The searching, progress, and report output features are available to NodeJS modules through an API module.
+
+For examples of how to use the API see: [lib/api.js](https://github.com/jonesd/vcgrep/blob/master/lib/api.js)
+
+```js
+var vcgrep = require('vcgrep');
+
+vcgrep.searchFiles(/(\w+)+/g, ['README.md'], 'none', function(err, matches) {
+  vcgrep.writeOutput('histogram', matches);
+  console.log('Found '+matches.total+' hits across: '+matches.totalFiles+' files');
+});
+```
+
+
 # Change Log
 
 ## [Unreleased][unreleased]
 ### Added
+- Introduce simple API entry point for direct use by NodeJS modules
 - Process exit code, 0 when matches found, 1 no matches
 
 ## [0.1.0] - 2015-02-14
