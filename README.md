@@ -3,6 +3,7 @@
 File content search tool based on regular expression capture groups with simple terminal visualization. Use it to
 easily show the frequency of status codes from apache access logs, or the frequency of words in a text document.
 
+<img src="http://dgjones.info/vcgrep/text-search-small.gif"/>
 
 ## Install
 
