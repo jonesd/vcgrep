@@ -9,7 +9,7 @@ easily show the frequency of status codes from apache access logs, or the freque
 
 vcgrep requires node 0.10 or later.
 
-    npm install vcgrep -g
+    npm install -g vcgrep
 
 
 ## Examples
@@ -44,6 +44,18 @@ Options:
     --recursive, -r  Navigate subdirectories for input files
     --verbose, -v    Verbose logging
     --version        Show version number
+
+
+# Change Log
+
+## [Unreleased][unreleased]
+### Added
+- Process exit code, 0 when matches found, 1 no matches
+
+## [0.1.0] - 2015-02-14
+### Added
+- Initial feature set
+
 
 ## Licence
 
