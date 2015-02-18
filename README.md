@@ -25,6 +25,11 @@ Frequency of words found in a text document:
     vcgrep -g '(\w+)+' README.md
 
 
+Frequency of words found in js documents using the full page card progress mode:
+
+    vcgrep  -p card -o none -g  -i --include '*.js' '(\w+)+' lib
+
+
 ## Syntax
 
     Usage: vcgrep [OPTIONS] PATTERN FILES...
