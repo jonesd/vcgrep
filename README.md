@@ -4,7 +4,7 @@
 terminal visualization of the progress and results is provided. Use it to easily show the frequency of status codes
 from apache access logs, or the frequency of words in a text document.
 
-<img src="http://dgjones.info/vcgrep/text-search-small.gif"/>
+<img src="http://dgjones.info/vcgrep/text-search-card.gif"/>
 
 ## Install
 
@@ -81,6 +81,8 @@ vcgrep.searchFiles(/(\w+)+/g, ['README.md'], false, 'none', function(err, matche
 # Change Log
 
 ## [Unreleased][unreleased]
+
+## [0.2.1] - 2015-02-17
 ### Added
 - 'card' full page progress
 - --ignore case of capture key
