@@ -75,6 +75,8 @@ vcgrep.searchFiles(/(\w+)+/g, ['README.md'], 'none', function(err, matches) {
 # Change Log
 
 ## [Unreleased][unreleased]
+### Added
+- 'card' full page progress
 
 ## [0.2.0] - 2015-02-16
 ### Added

@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "ansi": "^0.3.0",
+    "axel": "0.0.3",
     "linebyline": "0.0.7",
     "matchstick": "^0.7.5",
     "pkginfo": "^0.3.0",
