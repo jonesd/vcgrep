@@ -48,6 +48,7 @@ For more details on the JavaScript regular expression syntax, see: [MDN](https:/
 ## Pattern Matching Options
 
     --global, -g     Multiple matches per line are considered
+    --ignore, -i     Ignore case for determining capture key
 
 ## Output Options
 
@@ -65,7 +66,7 @@ For examples of how to use the API see: [lib/api.js](https://github.com/jonesd/v
 ```js
 var vcgrep = require('vcgrep');
 
-vcgrep.searchFiles(/(\w+)+/g, ['README.md'], 'none', function(err, matches) {
+vcgrep.searchFiles(/(\w+)+/g, ['README.md'], false, 'none', function(err, matches) {
   vcgrep.writeOutput('histogram', matches);
   console.log('Found '+matches.total+' hits across: '+matches.totalFiles+' files');
 });
@@ -77,6 +78,7 @@ vcgrep.searchFiles(/(\w+)+/g, ['README.md'], 'none', function(err, matches) {
 ## [Unreleased][unreleased]
 ### Added
 - 'card' full page progress
+- --ignore case of capture key
 
 ## [0.2.0] - 2015-02-16
 ### Added
