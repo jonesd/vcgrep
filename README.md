@@ -6,6 +6,8 @@ from apache access logs, or the frequency of words in a text document.
 
 <img src="http://dgjones.info/vcgrep/text-search-card.gif"/>
 
+[![Build Status](https://travis-ci.org/jonesd/vcgrep.svg?branch=master)](https://travis-ci.org/jonesd/vcgrep)
+
 ## Install
 
 vcgrep requires node 0.10 or later.
