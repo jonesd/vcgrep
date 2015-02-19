@@ -81,6 +81,8 @@ vcgrep.searchFiles(/(\w+)+/g, ['README.md'], false, 'none', function(err, matche
 # Change Log
 
 ## [Unreleased][unreleased]
+### Changed
+- Progress API now event based
 
 ## [0.2.1] - 2015-02-17
 ### Added
