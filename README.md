@@ -61,7 +61,7 @@ For more details on the JavaScript regular expression syntax, see: [MDN](https:/
 
     --head, -h       Limit results to the most frequent n entries
     --output, -o     Output format, one of: none,plain,json,histogram  [default: "histogram"]
-    --progress, -p   Progress feedback, one of: none,line              [default: "line"]
+    --progress, -p   Progress feedback, one of: card,none,line         [default: "line"]
 
 
 ## API
