@@ -27,10 +27,6 @@
   "scripts": {
     "test": "mocha -R spec ./test"
   },
-  "devDependencies": {
-    "mocha": "^2.1.0",
-    "should": "^5.0.0"
-  },
   "keywords": [
     "grep",
     "file"
@@ -48,5 +44,11 @@
     "shelljs": "^0.3.0",
     "underscore": "^1.7.0",
     "yargs": "^2.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "sandboxed-module": "^2.0.0",
+    "should": "^5.0.0",
+    "sinon": "^1.12.2"
   }
 }
