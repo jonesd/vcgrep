@@ -85,9 +85,16 @@ vcgrep.searchFiles(/(\w+)+/g, ['README.md'], {progress: 'none'}, function(err, m
 # Change Log
 
 ## [Unreleased][unreleased]
+
+## [0.3.0] - 2015-02-23
+### Added
+- --exclude file wildcard option
+- count output option with total matches and files
+
 ### Changed
 - Progress API now event based
 - Change ignore case flag to --ignore-case from --ignore to match grep
+- Pass options to search api as object
 
 ## [0.2.1] - 2015-02-17
 ### Added
