@@ -74,7 +74,8 @@ For examples of how to use the API see: [lib/api.js](https://github.com/jonesd/v
 ```js
 var vcgrep = require('vcgrep');
 
-vcgrep.searchFiles(/(\w+)+/g, ['README.md'], false, 'none', function(err, matches) {
+
+vcgrep.searchFiles(/(\w+)+/g, ['README.md'], {progress: 'none'}, function(err, matches) {
   vcgrep.writeOutput('histogram', matches);
   console.log('Found '+matches.total+' hits across: '+matches.totalFiles+' files');
 });
