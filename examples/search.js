@@ -4,7 +4,12 @@
 
 var vcgrep = require('vcgrep');
 
-vcgrep.searchFiles(/(\w+)+/g, ['README.md'], false, 'none', function(err, matches) {
+var options = {
+  progress: 'none',
+
+};
+
+vcgrep.searchFiles(/(\w+)+/g, ['README.md'], options, function(err, matches) {
   vcgrep.writeOutput('histogram', matches);
   console.log('Found '+matches.total+' hits across: '+matches.totalFiles+' files');
 });
