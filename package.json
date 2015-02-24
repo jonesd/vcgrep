@@ -1,7 +1,7 @@
 {
   "name": "vcgrep",
   "description": "File content search tool based on regular expression capture groups with simple terminal visualization.",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "homepage": "https://github.com/jonesd/vcgrep",
   "author": {
     "name": "David Jones",
