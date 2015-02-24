@@ -50,6 +50,7 @@ For more details on the JavaScript regular expression syntax, see: [MDN](https:/
 
 ## File Selection Options
 
+    --exclude          Exclude files that match the wildcard
     --include          include only files that match the wildcard
 
 ## Pattern Matching Options
@@ -60,8 +61,8 @@ For more details on the JavaScript regular expression syntax, see: [MDN](https:/
 ## Output Options
 
     --head, -h         Limit results to the most frequent n entries
-    --output, -o       Output format, one of: none,plain,json,histogram  [default: "histogram"]
-    --progress, -p     Progress feedback, one of: card,none,line         [default: "line"]
+    --output, -o       Output format, one of: count,none,plain,json,histogram  [default: "histogram"]
+    --progress, -p     Progress feedback, one of: card,none,line               [default: "line"]
 
 
 ## API

@@ -82,6 +82,23 @@ describe('Output', function() {
     });
   });
 
+  describe('countCompleted', function () {
+    it('should write summary line with matches and files', function () {
+      sinon.spy(loggerStub, 'log');
+      var output = requireOutput({logger:loggerStub});
+
+      var countCompleted = output.fromOption('count');
+      values.push(['first', 10]);
+      values.push(['second', 5]);
+      matches.total = 20;
+      matches.totalFiles= 3;
+
+      countCompleted(matches, values);
+
+      loggerStub.log.firstCall.args[0].should.equal('Found 20 matches across: 3 files');
+    });
+  });
+
   describe('histogramCompleted', function () {
     it('should write values as lines of bars with key: value', function () {
       var out = '';
