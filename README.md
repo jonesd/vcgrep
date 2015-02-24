@@ -44,24 +44,24 @@ For more details on the JavaScript regular expression syntax, see: [MDN](https:/
 
 ### General Options
 
-    --help           Prints a summary of the usage
-    --verbose, -v    Verbose logging
-    --version        Show version number
+    --help             Prints a summary of the usage
+    --verbose, -v      Verbose logging
+    --version          Show version number
 
 ## File Selection Options
 
-    --include        include only files that match the wildcard
+    --include          include only files that match the wildcard
 
 ## Pattern Matching Options
 
-    --global, -g     Multiple matches per line are considered
-    --ignore, -i     Ignore case for determining capture key
+    --global, -g       Multiple matches per line are considered
+    --ignore-case, -i  Ignore case for determining capture key
 
 ## Output Options
 
-    --head, -h       Limit results to the most frequent n entries
-    --output, -o     Output format, one of: none,plain,json,histogram  [default: "histogram"]
-    --progress, -p   Progress feedback, one of: card,none,line         [default: "line"]
+    --head, -h         Limit results to the most frequent n entries
+    --output, -o       Output format, one of: none,plain,json,histogram  [default: "histogram"]
+    --progress, -p     Progress feedback, one of: card,none,line         [default: "line"]
 
 
 ## API
@@ -85,6 +85,7 @@ vcgrep.searchFiles(/(\w+)+/g, ['README.md'], false, 'none', function(err, matche
 ## [Unreleased][unreleased]
 ### Changed
 - Progress API now event based
+- Change ignore case flag to --ignore-case from --ignore to match grep
 
 ## [0.2.1] - 2015-02-17
 ### Added
