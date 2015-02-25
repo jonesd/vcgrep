@@ -44,6 +44,12 @@ describe('LineWriter', function() {
       lineWriter.write('0123456789ABCD');
       out.should.equal('0123456789');
     });
+    it('should support cutoff at 1', function() {
+      lineWriter = requireLineWriter({}, globals);
+      lineWriter.write('012345678');
+      lineWriter.write('9ABCD');
+      out.should.equal('0123456789');
+    });
     it('should record x between calls', function() {
       lineWriter = requireLineWriter({}, globals);
       lineWriter.write('0123456789');
